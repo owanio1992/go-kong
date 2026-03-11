@@ -4,7 +4,7 @@ package kong
 // Read https://docs.konghq.com/gateway/latest/admin-api/#route-object
 // +k8s:deepcopy-gen=true
 type Route struct {
-	CreatedAt     *int                `json:"created_at,omitempty" yaml:"created_at,omitempty"`
+	CreatedAt *float64                `json:"created_at,omitempty" yaml:"created_at,omitempty"`
 	Expression    *string             `json:"expression,omitempty" yaml:"expression,omitempty"`
 	Hosts         []*string           `json:"hosts,omitempty" yaml:"hosts,omitempty"`
 	Headers       map[string][]string `json:"headers,omitempty" yaml:"headers,omitempty"`

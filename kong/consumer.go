@@ -7,7 +7,7 @@ type Consumer struct {
 	ID        *string   `json:"id,omitempty" yaml:"id,omitempty"`
 	CustomID  *string   `json:"custom_id,omitempty" yaml:"custom_id,omitempty"`
 	Username  *string   `json:"username,omitempty" yaml:"username,omitempty"`
-	CreatedAt *int64    `json:"created_at,omitempty" yaml:"created_at,omitempty"`
+	CreatedAt *float64    `json:"created_at,omitempty" yaml:"created_at,omitempty"`
 	Tags      []*string `json:"tags,omitempty" yaml:"tags,omitempty"`
 }
 

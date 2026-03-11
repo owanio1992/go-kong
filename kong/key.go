@@ -4,7 +4,7 @@ package kong
 // +k8s:deepcopy-gen=true
 type Key struct {
 	ID        *string   `json:"id,omitempty" yaml:"id,omitempty"`
-	CreatedAt *int64    `json:"created_at,omitempty" yaml:"created_at,omitempty"`
+	CreatedAt *float64    `json:"created_at,omitempty" yaml:"created_at,omitempty"`
 	UpdatedAt *int64    `json:"updated_at,omitempty" yaml:"updated_at,omitempty"`
 	Set       *KeySet   `json:"set,omitempty" yaml:"set,omitempty"`
 	Name      *string   `json:"name,omitempty" yaml:"name,omitempty"`
@@ -18,7 +18,7 @@ type Key struct {
 // +k8s:deepcopy-gen=true
 type KeySet struct {
 	ID        *string   `json:"id,omitempty" yaml:"id,omitempty"`
-	CreatedAt *int64    `json:"created_at,omitempty" yaml:"created_at,omitempty"`
+	CreatedAt *float64    `json:"created_at,omitempty" yaml:"created_at,omitempty"`
 	UpdatedAt *int64    `json:"updated_at,omitempty" yaml:"updated_at,omitempty"`
 	Name      *string   `json:"name,omitempty" yaml:"name,omitempty"`
 	Tags      []*string `json:"tags,omitempty" yaml:"tags,omitempty"`

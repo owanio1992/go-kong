@@ -9,7 +9,7 @@ type Certificate struct {
 	CertAlt   *string   `json:"cert_alt,omitempty" yaml:"cert_alt,omitempty"`
 	Key       *string   `json:"key,omitempty" yaml:"key,omitempty"`
 	KeyAlt    *string   `json:"key_alt,omitempty" yaml:"key_alt,omitempty"`
-	CreatedAt *int64    `json:"created_at,omitempty" yaml:"created_at,omitempty"`
+	CreatedAt *float64    `json:"created_at,omitempty" yaml:"created_at,omitempty"`
 	SNIs      []*string `json:"snis,omitempty" yaml:"snis,omitempty"`
 	Tags      []*string `json:"tags,omitempty" yaml:"tags,omitempty"`
 }

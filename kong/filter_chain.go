@@ -12,7 +12,7 @@ type FilterChain struct {
 	Route     *Route    `json:"route,omitempty" yaml:"route,omitempty"`
 	Service   *Service  `json:"service,omitempty" yaml:"service,omitempty"`
 	Filters   []*Filter `json:"filters,omitempty" yaml:"filters,omitempty"`
-	CreatedAt *int      `json:"created_at,omitempty" yaml:"created_at,omitempty"`
+	CreatedAt *float64      `json:"created_at,omitempty" yaml:"created_at,omitempty"`
 	UpdatedAt *int      `json:"updated_at,omitempty" yaml:"updated_at,omitempty"`
 	Tags      []*string `json:"tags,omitempty" yaml:"tags,omitempty"`
 }

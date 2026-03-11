@@ -3,7 +3,7 @@ package kong
 // RBACUser represents an RBAC user in Kong Enterprise
 // +k8s:deepcopy-gen=true
 type RBACUser struct {
-	CreatedAt      *int    `json:"created_at,omitempty" yaml:"created_at,omitempty"`
+	CreatedAt *float64    `json:"created_at,omitempty" yaml:"created_at,omitempty"`
 	Comment        *string `json:"comment,omitempty" yaml:"comment,omitempty"`
 	ID             *string `json:"id,omitempty" yaml:"id,omitempty"`
 	Name           *string `json:"name,omitempty" yaml:"name,omitempty"`

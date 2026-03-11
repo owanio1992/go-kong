@@ -8,7 +8,7 @@ type Vault struct {
 	Description *string       `json:"description,omitempty" yaml:"description,omitempty"`
 	Prefix      *string       `json:"prefix,omitempty" yaml:"prefix,omitempty"`
 	Config      Configuration `json:"config,omitempty" yaml:"config,omitempty"`
-	CreatedAt   *int64        `json:"created_at,omitempty" yaml:"created_at,omitempty"`
+	CreatedAt *float64        `json:"created_at,omitempty" yaml:"created_at,omitempty"`
 	UpdatedAt   *int64        `json:"updated_at,omitempty" yaml:"updated_at,omitempty"`
 	Tags        []*string     `json:"tags,omitempty" yaml:"tags,omitempty"`
 }
