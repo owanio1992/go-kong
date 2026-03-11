@@ -11,7 +11,7 @@ import (
 // Note: this type implements a custom JSON marshaler. Review the associated MarshalJSON()
 // function if it does not marshal as expected.
 type RBACEndpointPermission struct {
-	CreatedAt *int      `json:"created_at,omitempty" yaml:"created_at,omitempty"`
+	CreatedAt *float64      `json:"created_at,omitempty" yaml:"created_at,omitempty"`
 	Workspace *string   `json:"workspace,omitempty" yaml:"workspace,omitempty"`
 	Endpoint  *string   `json:"endpoint,omitempty" yaml:"endpoint,omitempty"`
 	Actions   []*string `json:"actions,omitempty" yaml:"actions,omitempty"`
@@ -23,7 +23,7 @@ type RBACEndpointPermission struct {
 // MarshalJSON marshals an endpoint permission into a suitable form for the Kong admin API
 func (e *RBACEndpointPermission) MarshalJSON() ([]byte, error) {
 	type ep struct {
-		CreatedAt *int      `json:"created_at,omitempty" yaml:"created_at,omitempty"`
+		CreatedAt *float64      `json:"created_at,omitempty" yaml:"created_at,omitempty"`
 		Workspace *string   `json:"workspace,omitempty" yaml:"workspace,omitempty"`
 		Endpoint  *string   `json:"endpoint,omitempty" yaml:"endpoint,omitempty"`
 		Actions   *string   `json:"actions,omitempty" yaml:"actions,omitempty"`

@@ -13,7 +13,7 @@ type ConsumerGroupObject struct {
 type ConsumerGroup struct {
 	ID        *string   `json:"id,omitempty" yaml:"id,omitempty"`
 	Name      *string   `json:"name,omitempty" yaml:"name,omitempty"`
-	CreatedAt *int64    `json:"created_at,omitempty" yaml:"created_at,omitempty"`
+	CreatedAt *float6464    `json:"created_at,omitempty" yaml:"created_at,omitempty"`
 	Tags      []*string `json:"tags,omitempty" yaml:"tags,omitempty"`
 }
 
@@ -22,7 +22,7 @@ type ConsumerGroup struct {
 type ConsumerGroupConsumer struct {
 	Consumer      *Consumer      `json:"consumer,omitempty" yaml:"consumer,omitempty"`
 	ConsumerGroup *ConsumerGroup `json:"consumer_group,omitempty" yaml:"consumer_group,omitempty"`
-	CreatedAt     *int64         `json:"created_at,omitempty" yaml:"created_at,omitempty"`
+	CreatedAt *float6464         `json:"created_at,omitempty" yaml:"created_at,omitempty"`
 }
 
 // Represents the request body to add a Consumer to a Consumer Group in Kong.
@@ -43,7 +43,7 @@ type ConsumerGroupRLA struct {
 type ConsumerGroupPlugin struct {
 	ID            *string        `json:"id,omitempty" yaml:"id,omitempty"`
 	Name          *string        `json:"name,omitempty" yaml:"name,omitempty"`
-	CreatedAt     *int64         `json:"created_at,omitempty" yaml:"created_at,omitempty"`
+	CreatedAt *float6464         `json:"created_at,omitempty" yaml:"created_at,omitempty"`
 	InstanceName  *string        `json:"instance_name,omitempty" yaml:"instance_name,omitempty"`
 	Config        Configuration  `json:"config,omitempty" yaml:"config,omitempty"`
 	ConsumerGroup *ConsumerGroup `json:"consumer_group,omitempty" yaml:"consumer_group,omitempty"`

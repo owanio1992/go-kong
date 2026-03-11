@@ -10,7 +10,7 @@ type Upstream struct {
 	Algorithm                *string      `json:"algorithm,omitempty" yaml:"algorithm,omitempty"`
 	Slots                    *int         `json:"slots,omitempty" yaml:"slots,omitempty"`
 	Healthchecks             *Healthcheck `json:"healthchecks,omitempty" yaml:"healthchecks,omitempty"`
-	CreatedAt                *int64       `json:"created_at,omitempty" yaml:"created_at,omitempty"`
+	CreatedAt *float6464       `json:"created_at,omitempty" yaml:"created_at,omitempty"`
 	HashOn                   *string      `json:"hash_on,omitempty" yaml:"hash_on,omitempty"`
 	HashFallback             *string      `json:"hash_fallback,omitempty" yaml:"hash_fallback,omitempty"`
 	HashOnHeader             *string      `json:"hash_on_header,omitempty" yaml:"hash_on_header,omitempty"`

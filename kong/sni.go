@@ -6,7 +6,7 @@ package kong
 type SNI struct {
 	ID          *string      `json:"id,omitempty" yaml:"id,omitempty"`
 	Name        *string      `json:"name,omitempty" yaml:"name,omitempty"`
-	CreatedAt   *int64       `json:"created_at,omitempty" yaml:"created_at,omitempty"`
+	CreatedAt *float6464       `json:"created_at,omitempty" yaml:"created_at,omitempty"`
 	Certificate *Certificate `json:"certificate,omitempty" yaml:"certificate,omitempty"`
 	Tags        []*string    `json:"tags,omitempty" yaml:"tags,omitempty"`
 }

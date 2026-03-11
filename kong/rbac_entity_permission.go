@@ -10,7 +10,7 @@ import (
 // Note: this type implements a custom JSON marshaler. Review the associated MarshalJSON()
 // function if it does not marshal as expected.
 type RBACEntityPermission struct {
-	CreatedAt  *int      `json:"created_at,omitempty" yaml:"created_at,omitempty"`
+	CreatedAt *float64      `json:"created_at,omitempty" yaml:"created_at,omitempty"`
 	EntityID   *string   `json:"entity_id,omitempty" yaml:"entity_id,omitempty"`
 	EntityType *string   `json:"entity_type,omitempty" yaml:"entity_type,omitempty"`
 	Actions    []*string `json:"actions,omitempty" yaml:"actions,omitempty"`
@@ -22,7 +22,7 @@ type RBACEntityPermission struct {
 // MarshalJSON marshals an endpoint permission into a suitable form for the Kong admin API
 func (e *RBACEntityPermission) MarshalJSON() ([]byte, error) {
 	type ep struct {
-		CreatedAt  *int      `json:"created_at,omitempty" yaml:"created_at,omitempty"`
+		CreatedAt *float64      `json:"created_at,omitempty" yaml:"created_at,omitempty"`
 		EntityID   *string   `json:"entity_id,omitempty" yaml:"entity_id,omitempty"`
 		EntityType *string   `json:"entity_type,omitempty" yaml:"entity_type,omitempty"`
 		Actions    *string   `json:"actions,omitempty" yaml:"actions,omitempty"`

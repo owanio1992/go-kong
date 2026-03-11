@@ -3,7 +3,7 @@ package kong
 // Developer represents a Developer in Kong.
 // +k8s:deepcopy-gen=true
 type Developer struct {
-	CreatedAt *int      `json:"created_at,omitempty" yaml:"created_at,omitempty"`
+	CreatedAt *float64      `json:"created_at,omitempty" yaml:"created_at,omitempty"`
 	ID        *string   `json:"id,omitempty" yaml:"id,omitempty"`
 	Status    *int      `json:"status,omitempty" yaml:"status,omitempty"`
 	Email     *string   `json:"email,omitempty" yaml:"email,omitempty"`
@@ -19,7 +19,7 @@ type Developer struct {
 // +k8s:deepcopy-gen=true
 type DeveloperRole struct {
 	Comment   *string `json:"comment,omitempty" yaml:"comment,omitempty"`
-	CreatedAt *int    `json:"created_at,omitempty" yaml:"created_at,omitempty"`
+	CreatedAt *float64    `json:"created_at,omitempty" yaml:"created_at,omitempty"`
 	ID        *string `json:"id,omitempty" yaml:"id,omitempty"`
 	Name      *string `json:"name,omitempty" yaml:"name,omitempty"`
 }

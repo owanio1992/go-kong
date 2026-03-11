@@ -6,7 +6,7 @@ package kong
 type Service struct {
 	ClientCertificate *Certificate `json:"client_certificate,omitempty" yaml:"client_certificate,omitempty"`
 	ConnectTimeout    *int         `json:"connect_timeout,omitempty" yaml:"connect_timeout,omitempty"`
-	CreatedAt         *int         `json:"created_at,omitempty" yaml:"created_at,omitempty"`
+	CreatedAt *float64         `json:"created_at,omitempty" yaml:"created_at,omitempty"`
 	Enabled           *bool        `json:"enabled,omitempty" yaml:"enabled,omitempty"`
 	Host              *string      `json:"host,omitempty" yaml:"host,omitempty"`
 	ID                *string      `json:"id,omitempty" yaml:"id,omitempty"`

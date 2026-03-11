@@ -4,7 +4,7 @@ package kong
 // Read https://docs.konghq.com/gateway/latest/admin-api/#plugin-object
 // +k8s:deepcopy-gen=true
 type Plugin struct {
-	CreatedAt     *int            `json:"created_at,omitempty" yaml:"created_at,omitempty"`
+	CreatedAt *float64            `json:"created_at,omitempty" yaml:"created_at,omitempty"`
 	ID            *string         `json:"id,omitempty" yaml:"id,omitempty"`
 	Name          *string         `json:"name,omitempty" yaml:"name,omitempty"`
 	InstanceName  *string         `json:"instance_name,omitempty" yaml:"instance_name,omitempty"`
